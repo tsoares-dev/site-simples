@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple website</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body class="light-theme">  
+  <!-- dark-theme -->
+  <!-- <script>alert('Hello World')</script> -->
+  <h1>Task List</h1>
+  <p id="msg">Current tasks:</p>
+  <ul>
+    <li class="list">Add Visual Styles</li>
+    <li class="list">Add light and dark themes</li>
+    <li>Enable switching the theme</li>
+  </ul>
+  <div>
+    <button class="btn">Dark</button>
+  </div>
+  <!-- O elemento de script pode ser colocado no <head> ou em outro lugar no <body>.
+
+    No entanto, colocar <script> no final da seção <body> permite que todo o
+    
+    conteúdo da página seja exibido na tela primeiro, carregando o script em seguida. -->
+  <script src="./app.js"></script>
+  <noscript>You need to Enable JavaScript to view the full site</noscript>
+
+<!-- O elemento de script pode ser colocado no <head> ou em outro lugar no <body>.
+Usar o elemento <noscript> é um exemplo de tolerância a falhas ou degradação gradual.
+
+Podemos detectar quando um recurso não é compatível
+
+ou não está disponível e nos planejar para essa eventualidade. -->
+
+</body>
+</html>

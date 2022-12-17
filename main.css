@@ -1,0 +1,78 @@
+:root {
+  --green: #00FF00;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* O seletor de :root representa o elemento <html> na página HTML.
+Para esse tipo de tarefa, uma melhor prática é definir um conjunto de variáveis CSS globais no elemento :root.
+Aqui, você define três variáveis de cor anexadas à raiz da página. */
+
+* {
+  color: var(--fontColor);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  /* font-family: monospace; */
+  }
+
+  ul {
+  font-family: helvética;
+  }
+
+  /* Seletores
+ID e seletores de classe permitem aplicar estilos a nomes de atributos personalizados em seu HTML.
+Uma ID é usada para definir o estilo de um elemento, enquanto classes podem definir o estilo de vários elementos. */
+li {
+  list-style: circle;
+  }
+  .list {
+  list-style: square;
+  }
+  /* #msg {
+  font-family: monospace;
+  } */
+
+  /* Os atributos personalizados são chamados de .list e #msg.
+
+A lista do seletor de classe tem um prefixo de período,
+
+enquanto o seletor de ID é msg e tem um prefixo de sinal de libra.
+
+Os nomes são arbitrários, desde que eles correspondam ao que você definiu no HTML. */
+
+/* Adicionar um tema claro
+Agora, vamos adicionar suporte para temas de cores em seu site! */
+/* Comece definindo um tema de cor clara. Para o tema claro, use códigos de cor hexadecimais para a cor da fonte (000000, preto) e para a tela de fundo (00FF00, um matiz verde). */
+
+.light-theme {
+  --bg: var(--green);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white)
+/* color: 000000;
+background: 00FF00; */
+} 
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--green);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+.btn:focus {
+  outline-style: none;
+}
